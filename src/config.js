@@ -2,7 +2,7 @@ const config = {
   statusURL: 'https://srhpyqt94yxb.statuspage.io/api/v2/status.json',
   prefix: 't!',
   botGuildID: '689327932799451186',
-  ownerID: '453640548985602048',
+  ownerID: '916601553199202314',
   ad: {
     desc: {
       min_length: 10,
