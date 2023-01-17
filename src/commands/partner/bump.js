@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     client.database.all('SELECT * FROM settings').then(async row => {
       message.guild.fetchInvites().then(async invites => {
         if (row.length - 1 <= 0) {
-          client.embed.send(message, { desc: 'There are no other guilds for your advertisement to go, `v!invite` and setup the bot on other guilds before trying again.' })
+          client.embed.send(message, { desc: 'Il n'y a pas d'autres guildes pour votre annonce, "v!invite" et configurez le bot sur d'autres guildes avant de réessayer.' })
           return
         }
 
@@ -61,7 +61,7 @@ exports.run = async (client, message, args) => {
   } else {
     // It's been less than the set cooldown.
     const remaining = prettyMS(Math.round((cooldown) - (now - lastDate[message.guild.id])), { verbose: true, unitCount: 3, secondsDecimalDigits: 0 })
-    client.embed.send(message, { desc: `You must wait **${remaining}** before you can use this command again.` })
+    client.embed.send(message, { desc: `Vous devez attendre **${remaining}** avant de pouvoir réutiliser cette commande.` })
   }
 }
 
@@ -75,7 +75,7 @@ function bumpLogic (client, message, row, invite) {
       if (temp) {
         if (temp.id === message.guild.id) {
           if (!message.guild.channels.cache.has(row[a].partner)) {
-            client.embed.send(message, { desc: `You must first initialize a channel for the bot in ${message.guild.name} with \`${client.config.prefix}init\` before you can bump your server.` })
+            client.embed.send(message, { desc: `Vous devez d'abord initialiser un canal pour le bot dans ${message.guild.name} avec \`${client.config.prefix}init\` avant de pouvoir bosser votre serveur.` })
             lastDate[message.guild.id] = 0
             return
           }

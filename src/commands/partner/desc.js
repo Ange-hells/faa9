@@ -12,20 +12,20 @@
 exports.run = async (client, message, args) => {
   const desc = args.join(' ')
   if (desc === undefined || desc === '') {
-    return client.embed.send(message, { desc: 'Specify a guild description. Note that your guild invite will be attached automatically.' })
+    return client.embed.send(message, { desc: 'Spécifiez une description de guilde. Notez que votre invitation de guilde sera jointe automatiquement.' })
   }
 
   if (desc.length > client.config.ad.desc.max_length) {
-    return client.embed.send(message, { desc: `Description can not be more then ${client.config.ad.desc.max_length} characters long.` })
+    return client.embed.send(message, { desc: `La description ne peut pas être plus que ${client.config.ad.desc.max_length} caractères.` })
   }
   if (desc.length < client.config.ad.desc.min_length) {
-    return client.embed.send(message, { desc: `Description must have at least ${client.config.ad.desc.min_length} characters in it.` })
+    return client.embed.send(message, { desc: `La description ne peut pas être courte que ${client.config.ad.desc.min_length} caractères.` })
   }
   if (desc.includes('http') || desc.includes('@everyone') || desc.includes('@here')) {
-    return client.embed.send(message, { desc: 'No links or mentions in the description please.' })
+    return client.embed.send(message, { desc: 'Pas de liens ou de mentions dans la description s\'il vous plaît.' })
   }
   client.database.run('UPDATE settings SET desc = ? WHERE guildid = ?', [desc, message.guild.id])
-  client.embed.send(message, { desc: 'Description sucessfully updated.' })
+  client.embed.send(message, { desc: 'Description mise à jour avec succès.' })
 }
 
 /** Command Config */
