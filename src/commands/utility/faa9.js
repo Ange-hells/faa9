@@ -1,6 +1,6 @@
 /**
  * Provides useful information.
- * @module commands/help
+ * @module commands/faa9
  */
 
 /**
@@ -11,23 +11,23 @@
  */
 exports.run = async (client, message, args) => {
   client.embed.send(message, {
-    title: 'Faa9',
+    title: 'faa9',
     code: true,
-    desc: `Bonjour a tou.te.s. Je suis Faa9 **${client.users.cache.get(client.config.ownerID).tag}**, Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
+    desc: `Bonjour a tou.te.s. Je suis **Faa9** l'esclave de **${client.gild}**. Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
   })
 }
 
 /** Command Config */
 exports.conf = {
   enabled: true,
-  aliases: ['h'],
+  aliases: ['f'],
   guildOnly: false,
-  permLevel: ''
+  permLevel: 'user'
 }
 
 /** Command Help */
 exports.help = {
-  name: '',
+  name: 'faa9',
   usage: '',
-  description: '.'
+  description: ' .'
 }
