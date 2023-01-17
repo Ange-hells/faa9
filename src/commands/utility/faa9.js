@@ -13,14 +13,15 @@ exports.run = async (client, message, args) => {
   client.embed.send(message, {
     title: 'faa9',
     code: true,
-    desc: `Bonjour a tou.te.s. Je suis **Faa9** l'esclave de **${client.guild.name }**. Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
+    desc: `Bonjour a tou.te.s. 
+    Je suis **Faa9** l'esclave de **${client.guild_name }**. Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
   })
 }
 
 /** Command Config */
 exports.conf = {
   enabled: true,
-  aliases: ['f'],
+  aliases: [],
   guildOnly: false,
   permLevel: 'User'
 }
