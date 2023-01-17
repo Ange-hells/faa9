@@ -10,7 +10,7 @@
  * @param {string} args - The arguments of the command
  */
 exports.run = async (client, message, args) => {
-  client.embed.send(message, { desc: 'I\'ve sent you a private message with the bot invite link.' })
+  client.embed.send(message, { desc: 'Je vous ai envoyé un message privé avec le lien d\'invitation du bot.' })
   message.author.send(`<https://discordapp.com/api/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=27681>`)
 }
 
