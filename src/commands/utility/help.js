@@ -13,30 +13,30 @@ exports.run = async (client, message, args) => {
   client.embed.send(message, {
     title: 'Help',
     code: true,
-    desc: `The bot was created by **${client.users.cache.get(client.config.ownerID).tag}**, if you have any questions or would like to suggest new features or report bugs, please send them a direct message. All commands start with \`${client.config.prefix}\`.`,
+    desc: `Le bot a été créé par **${client.users.cache.get(client.config.ownerID).tag}**, Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
     fields: [{
       name: 'invite',
-      value: 'A way to invite this bot to your own guild.'
+      value: 'Un moyen d\'inviter ce bot dans votre propre guilde.'
     },
     {
       name: 'init',
-      value: 'Synchronize advertisement channel.'
+      value: 'Synchroniser le canal publicitaire.'
     },
     {
       name: 'desc',
-      value: 'Set the description of your advertisement.'
+      value: 'Définissez la description de votre annonce.'
     },
     {
       name: 'preview',
-      value: 'Preview your advertisement.'
+      value: 'Prévisualisez votre annonce.'
     },
     {
       name: 'bump',
-      value: 'Bump your ad to all the other guilds.'
+      value: 'Diffusez votre annonce à toutes les autres guildes.'
     },
     {
       name: 'help',
-      value: 'Useless command.'
+      value: 'Commande inutile.'
     }
     ]
   })
