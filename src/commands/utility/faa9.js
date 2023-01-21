@@ -11,24 +11,24 @@
  */
 exports.run = async (client, message, args) => {
   client.embed.send(message, {
-    title: 'faa9',
+    title: "faa9",
     code: true,
     desc: `Bonjour a tou.te.s. 
-    Je suis **Faa9** l'esclave de **${client.guild_name }**. Si vous avez des questions ou souhaitez suggérer de nouvelles fonctionnalités ou signaler des bogues, veuillez leur envoyer un message direct. Toutes les commandes commencent par \`${client.config.prefix}\`.`,
-  })
-}
+    Je suis **Faa9** l'esclave de **${client.guild_name}**.`,
+  });
+};
 
 /** Command Config */
 exports.conf = {
   enabled: true,
   aliases: [],
   guildOnly: false,
-  permLevel: 'User'
-}
+  permLevel: "User",
+};
 
 /** Command Help */
 exports.help = {
-  name: 'faa9',
-  usage: '',
-  description: ' .'
-}
+  name: "faa9",
+  usage: "",
+  description: " .",
+};
