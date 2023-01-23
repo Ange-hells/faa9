@@ -3,6 +3,7 @@ const config = {
   prefix: '&',
   botGuildID: '689327932799451186',
   ownerID: '916601553199202314',
+  mongodbURL:"",
   ad: {
     desc: {
       min_length: 10,
@@ -25,6 +26,24 @@ const config = {
         })
       }
     },
+    // {
+    //   level: 2,
+    //   name: 'Modo',
+    //   check: (client, message) => {
+    //     return new Promise((resolve, reject) => {
+    //       resolve(message.member.hasPermission("BAN_MEMBERS") === true)
+    //     })
+    //   }
+    // },
+    // {
+    //   level: 3,
+    //   name: 'Admin',
+    //   check: (client, message) => {
+    //     return new Promise((resolve, reject) => {
+    //       resolve(message.member.hasPermission("MANAGE_GUILD") === true)
+    //     })
+    //   }
+    // },
     {
       level: 4,
       name: 'Server Owner',

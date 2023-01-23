@@ -54,9 +54,10 @@ module.exports = async (client, message) => {
         ]
       })
     }
-  }).catch((e) => {
-    if (message.guild) {
-      client.embed.debug(message, `Tell ${message.guild.owner.tag} to assign a role for ${client.config.permLevels.find(l => l.level === e).name} in the settings.`)
-    }
   })
+  // .catch((e) => {
+  //   if (message.guild) {
+  //     client.embed.debug(message, `Tell ${message.guild.owner.tag} to assign a role for ${client.config.permLevels.find(l => l.level === e).name} in the settings.`)
+  //   }
+  // })
 }

@@ -24,9 +24,9 @@ for (const permLevel of client.config.permLevels) {
 const init = async () => {
   console.clear()
 
-  console.log('------------------------------------------------------------------------')
-  console.log('You may use this bot in anyway you see fit, you may even change the owner name to be your own.')
-  console.log('------------------------------------------------------------------------')
+  // console.log('------------------------------------------------------------------------')
+  // console.log('You may use this bot in anyway you see fit, you may even change the owner name to be your own.')
+  // console.log('------------------------------------------------------------------------')
 
   const loader = await client.loader
   await loader.registerModules(client)
