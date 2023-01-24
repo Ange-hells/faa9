@@ -13,7 +13,7 @@ exports.run = (client, message, args, customisation) => {
   if (userRolePossition <= rolePosition) return message.channel.send("❌**Error:** Je ne peut pas banir de membre avec un role supperieur ou egale a votre role le plus haut !")
   if (botRolePossition <= rolePosition) return message.channel.send("❌**Error:** Je ne peut pas banir de membre avec un role supperieur au mien !")
   if (!message.guild.member(user).bannable) {
-    message.channel.send(`:redTick: Je ne peut pas kické ce menbre.`);
+    message.channel.send(`:redTick: Je ne peut pas ban ce menbre.`);
     return
   }else{
 
