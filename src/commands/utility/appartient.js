@@ -1,9 +1,11 @@
 const Discord = require('discord.js');
 exports.run = async (client, message, args, customisation) => {
-  let reason = args.slice(1).join(' ');
-  if(!message.mentions.users.first())return message.reply("Vous devez mentioné quelqu\'un pour que je le mute")
+  let rename1 = args.slice(1).join(' ');
+  let rename2 = args.slace(1).join(' ');
+  let rolename = "🔒Appartient à " + message.mentions.users.first().name +"🔒";
+  if(!message.mentions.users.first())return message.reply("Vous devez me dire a qui appartiendra" + rename1 + "&" + rename2)
   let user = message.mentions.users.first();
-  let muteRole = client.guilds.cache.get(message.guild.id).roles.cache.find(val => val.name === 'Mute');
+  let muteRole = client.guilds.cache.get(message.guild.id).roles.cache.find(val => val.name === rolename);
   if(message.mentions.users.first().id === customisation.ownerid) return message.reply('vous pouvez le Muté vous même:facepalm:')
   if(message.author.id === message.mentions.users.first()) return message.reply("Vous ne pouvez vous auto-muté:facepalm:");
   if (!muteRole) {
@@ -79,7 +81,7 @@ exports.run = async (client, message, args, customisation) => {
 
 exports.conf = {
   enabled: true,
-  guildOnly: false,a
+  guildOnly: false,
   aliases: ['unmute'],
   permLevel: "Bot Owner"
 };
