@@ -1,67 +1,87 @@
-<div align="center">
+<!-- <div align="center">
 
   [![Quality Gate Status][quality]][quality-url]
   [![Lines of Code][lines]][lines-url]
   [![Bugs][bugs]][bugs-url]
   [![GitHub license][license]][license-url]
 
-</div>
+</div> -->
 
-<p align="center">Partner bot is a discord bot that uses discord-js and sqlite to automate partnerships in the big community of discord. The bot sends your advert to every guild that has the bot setup with a configurable cooldown when you use the bump command. This bot has only been tested on a total of 4 servers, issues may arise if the bot has to handle 100 or more servers all sending messages between each other simultaneously. This project has been discontinued. If this bot was helpful to you consider giving me credit by <a href="https://github.com/valkyrienyanko">linking back to my GitHub profile page</a>.
-  <br><br><br>
+
 </p>
 
-## Preview of Bump Message
-![Preview](https://i.gyazo.com/6fe2e372a70364f9cee3d2a96af1ddaf.png)
+# .bot.Fee9
+### Bot esclave de "S i  s s y S h o w"
+### version sissy/feminine de Mee6
 
-## Install on Windows
-1. Clone `https://github.com/valkyrienyanko/partner-bot.git`
-2. Download and install `LTS` [Node.js](https://nodejs.org/en/)
-3. Install yarn with `npm i -g yarn`
-4. Run `yarn install` in the project root directory
-5. Generate a bot token from the [Discord Developers Portal](https://discordapp.com/developers/applications/)
-6. Create a `.env` file in the `src` folder with the following content inside (`BOT_TOKEN=BotTokenHere`)
-7. Change `ownerID` in `config.js` to your user ID
-8. Start server with `yarn start`
-9. Create an invite link for the bot by grabbing its ID and putting it in the following URL `https://discordapp.com/api/oauth2/authorize?client_id=YOUR_BOT_ID_HERE&scope=bot&permissions=27681`
-10. Invite the bot to at least `2` unique guilds
-11. Continue setup with `t!help`
+<p align="center">Bonjour
 
-## Install on Heroku
-1. Create a [Heroku](https://signup.heroku.com/) account.
-2. Create a new App from your [Dashboard](https://dashboard.heroku.com/new-app). 
-3. Download the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line). 
-4. Open a terminal in your project and run `heroku login`.
-5. Create a Git remote using `heroku git:remote -a <APP-NAME>`.
-6. Create a file in your project called `Procfile`. (Must be in same folder as index.js)
-7. Insert `worker:node index.js` to the Procfile. 
-8. Commit and push using `git add .` `git commit -m "<Message>"` `git push heroku master`
+Je suis Faa9 un Bot discord Français, et kinky. J'ai étais crée dans le but de remplacé YAGPDB, Draft, MEE6 et Koya sur vos serveur Kinky et faisant tous ce qu'il fons sur vos diffèrent serveur (et plus encore) tout en étant gratuit et illimité
 
-## Install on Glitch
-1. Create an account on https://glitch.com
-2. Create new project -> import from GitHub -> `https://github.com/Valks-Bots/partner-bot`
-3. Click src folder dots icon to right -> create new file -> `.env` -> put `BOT_TOKEN=BotTokenHere` inside
-4. Change `ownerID` in `config.js` to your user ID
-5. Go to tools -> open up Terminal -> type `npm start`
-6. Create an invite link for the bot by grabbing its ID and putting it in the following URL `https://discordapp.com/api/oauth2/authorize?client_id=YOUR_BOT_ID_HERE&scope=bot&permissions=27681`
-7. Invite the bot to at least `2` unique guilds
-8. Continue setup with `t!help`
+De plus je suis orienté kink et NSFW je dispose donc de différente commendes et actions faite exprès pour vous 😉 <a href="http://patreon.com/faa9">soutien moi sur patreon ^^</a>.
+  <br><br><br>
 
-## FAQ
-Q: How do I increase the max description limit?  
-A: Edit the `max_length` config value in `src/config.js`  
+## Cahier des charge :
 
-Q: I am getting this error in the console "`TypeError: Cannot read property 'tag' of undefined`", what do I do?  
-A: Edit the `ownerID` config value in `src/config.js` with your user ID.  
+    Prefix : &
 
-Q: Every time I restart the bot, all the information I had setup has been wiped?  
-A: If you are using Heroku, Glitch or any other "free" online hosting service then it is highly likely that the service is deleting the bots database every 12 to 24 hours. If you host the bot on your local machine, you will not run into this problem.  
+    Ticket : 
+        - un systeme de ticket personnalisé ou on peux parametrais le nom que le salon du ticket aurais pour arreté de charcher partout et surtout avec un nombre ilimité de tickt diferent 
 
-[quality]: https://sonarcloud.io/api/project_badges/measure?project=valkyrienyanko_partner-bot&metric=alert_status
-[quality-url]: https://sonarcloud.io/dashboard?id=valkyrienyanko_partner-bot
-[lines]: https://sonarcloud.io/api/project_badges/measure?project=valkyrienyanko_partner-bot&metric=ncloc
-[lines-url]: https://sonarcloud.io/dashboard?id=valkyrienyanko_partner-bot
-[bugs]: https://sonarcloud.io/api/project_badges/measure?project=valkyrienyanko_partner-bot&metric=bugs
-[bugs-url]: https://sonarcloud.io/dashboard?id=valkyrienyanko_partner-bot
-[license]: https://img.shields.io/github/license/valkyrienyanko/partner-bot?color=brightgreen
-[license-url]: https://github.com/valkyrienyanko/partner-bot/blob/master/LICENSE
+    Moderation :
+        -Commande Jail : qui retirerai tous les role d'une personne, ajouterais un role suspendu et ouvrirez un ticket avec le staff et ce dernier pour evité de devoir aller en mp
+        -Commande Kick
+        -Commande Warm
+        -Commande Ban
+        -Commande Casier qui liste les sanction recus par une personne
+        -Commande BanIp 
+        -suppression de message sans limite
+
+    Mot de passe :
+        -Systeme de mot de passe qui supprime automatiquement tous message ne corespondant pas au mot de passe dans un sertain salon
+
+    Auto rôle : 
+        -auto role sans limite
+
+    Autre : 
+        -Commande Say : pour que le bot parle a ça place
+        -Commande AutoSay commande de message auto
+        -Commande Confess : suprime auto le message et le fait redir par le bot
+
+    Bump Coin :
+        -detecté les commande de bump, les comptabiliser et fournir automatiquement des recompence (role vip, message everyone)
+
+
+## Etat acctuel :
+|Comande :          |Description :                                                               |Etat :                                                | 
+|-------------------|----------------------------------------------------------------------------|------------------------------------------------------|
+|&Kick              |Expulse une personne                                                        |Present, repond mais ne kick pas                      |
+|&Warm              |Warm une personne                                                           |non present                                           |
+|&Ban               |Ban une personne                                                            |Present, repond mais ne ban pas                       |
+|&Say               |message envoyer par le bot                                                  |Faa9 peut parler mais cette comande n'est pas presente|
+|&Casier            |Liste les sanction recut par une personne                                   |non present                                           |
+|&BanIp             |Ban l'ip selectionner                                                       |non present                                           |
+|&Confess           |Message envoyer anonnimement                                                |non present                                           |
+|&EnterInSissyWorld |Mot de passe pour entrer sur le serveur                                     |Present, repond mais ne give pas le role member       |
+|&AutoSay           |Message automatique toute les x minute                                      |non present                                           |
+|&Jail              |Retire tous les roles d'une personne et ouvre un ticket avec le staf        |non present a venir                                   |
+|&ping              |Renvoi le temp de reponce (ping)                                            |Implementé fonctionnel                                |
+|&help              |Liste les commande presente et leur fonctionnement                          |Present incomplet                                     |
+|&_faa9             |Message de present en mode baillonée (commande fun)                         |Present Fonctionnel                                   |
+|&faa9              |Message de present en mode libre (non baillonée) (commande fun)             |Present Fonctionnel                                   |
+|&addrole           |Ajoute le role presiser a l'user nomé                                       |Present Fonctionnel                                   |
+|&invite            |Invite le bot                                                               |Present Fonctionnel                                   |
+|&punch             |Punch un user                                                               |Present Fonctionnel                                   |
+|&leave             |Retire les bot du server    |Present Fonctionnel                            |                                                      |
+|&kiss              |Permet a un user de kiss un autre (commande fun) //model pour futur commande|Present Fonctionnel (image non presente)              |
+|&rollD6            |Roll un D6 (commande fun) //pour plustard autre commande                    |                                                      |
+
+<!--|                   |                                                                            |                                                      |-->
+|Systeme :          |Description :                                                            |Etat :                    |
+|-------------------|-------------------------------------------------------------------------|--------------------------|
+|Systeme de Ticket  |Systeme de ticket                                                        |non present               |
+|Systeme de commande|Systeme de commande complexe (multi-file)                                |Implementé fonctionnel    |
+|Systeme d'autorôle |Systeme d'autorôle reactionelle (comme yag)                              |non present               |
+|Systeme de monaie  |Systeme banquaire fonctionel pour obtenir et depencer de l'argent virtuel|non present               |
+
+https://discordjs.guide/creating-your-bot/command-handling.html#individual-command-files
