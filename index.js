@@ -4,14 +4,14 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 client.database = require('sqlite')
-client.config = require('./config.js')
-client.loader = require('./modules/Loader')
+client.config = require('./src/config.js')
+client.loader = require('./src/modules/Loader')
 
 client.commands = new Discord.Collection()
 client.aliases = new Discord.Collection()
 
 require('dotenv').config()
-require('./modules/functions.js')(client)
+require('./src/modules/functions.js')(client)
 
 client.database.open('./database.sqlite') // Create database
 

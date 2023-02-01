@@ -11,7 +11,7 @@
  */
 exports.run = async (client, message, args) => {
   const msg = await client.embed.send(message, { desc: 'Ping?' }, false)
-  await client.embed.edit(message, msg, { desc: ` Pong! Latence de ${msg.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ws.ping)}ms` })
+  await client.embed.edit(message, msg, {color: `0xEB77D3`, desc: ` Pong! Latence de ${msg.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ws.ping)}ms` })
 }
 
 /** Command Config */

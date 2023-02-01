@@ -13,6 +13,7 @@ exports.run = async (client, message, args) => {
   client.embed.send(message, {
     title: "faa9",
     code: true,
+    color: (0xEB77D3),
     desc: `Hmhhmmh m hmm.hm.h.
     Mm hmmh Hmmh h'mhhhmhm hm H M H H M H H M H.Mmh Mmmhhmh.hhm mmh mmhm m hmhhmhmhmmh mhm hmmh hmhhm hmhhmhh.
     Mm mmhhmmh mh hmhh hm hmmh mhmmh mh hm hmmh hmhmhmhm hm hmm mh hmmh hmmhhmhmhh hmh mhhmhmhhmmhh 

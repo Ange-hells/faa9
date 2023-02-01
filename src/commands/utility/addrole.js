@@ -1,4 +1,4 @@
-const settings = require('./settings.json');
+// const settings = require('./settings.json');
 exports.run = (client, message, args, customisation) => {
   if (!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("❌**Error:** Je n'ai pas la permission **Manage Roles** !");
   if (message.mentions.users.size === 0) return message.reply("❌Veuillez mentionner un utilisateur à qui attribuer le rôle.\nExample: `addrole @user Members`");

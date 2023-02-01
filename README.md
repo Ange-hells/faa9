@@ -1,8 +1,25 @@
+<!-- <div align="center">
+
+  [![Quality Gate Status][quality]][quality-url]
+  [![Lines of Code][lines]][lines-url]
+  [![Bugs][bugs]][bugs-url]
+  [![GitHub license][license]][license-url]
+
+</div> -->
+
+
+</p>
+
 # .bot.Fee9
-### Bot esclave de "S i i s s y S h o w"
+### Bot esclave de "S i  s s y S h o w"
 ### version sissy/feminine de Mee6
 
+<p align="center">Bonjour
 
+Je suis Faa9 un Bot discord Français, et kinky. J'ai étais crée dans le but de remplacé YAGPDB, Draft, MEE6 et Koya sur vos serveur Kinky et faisant tous ce qu'il fons sur vos diffèrent serveur (et plus encore) tout en étant gratuit et illimité
+
+De plus je suis orienté kink et NSFW je dispose donc de différente commendes et actions faite exprès pour vous 😉 <a href="http://patreon.com/faa9">soutien moi sur patreon ^^</a>.
+  <br><br><br>
 
 ## Cahier des charge :
 

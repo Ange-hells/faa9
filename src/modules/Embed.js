@@ -34,10 +34,10 @@ exports.create = (message, { title, desc, fields, thumbnail, image, color, files
     embed: {
       title: title,
       description: Array.isArray(desc) ? desc.join('\n') : desc,
-      footer: {
-        text: `${message.author.tag} (${message.author.id}) <${message.content.slice(0, 20)}${message.content.length > 20 ? '...' : ''}>`,
-        icon_url: message.author.avatarURL()
-      },
+      // footer: {
+      //   text: `${message.author.tag} (${message.author.id}) <${message.content.slice(0, 20)}${message.content.length > 20 ? '...' : ''}>`,
+      //   icon_url: message.author.avatarURL()
+      // },
       thumbnail: {
         url: thumbnail
       },
@@ -45,7 +45,7 @@ exports.create = (message, { title, desc, fields, thumbnail, image, color, files
         url: image
       },
       color: color,
-      timestamp: new Date(),
+      // timestamp: new Date(),
       fields: fields,
       files: files
     }

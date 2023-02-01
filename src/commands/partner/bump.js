@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     client.database.all('SELECT * FROM settings').then(async row => {
       message.guild.fetchInvites().then(async invites => {
         if (row.length - 1 <= 0) {
-          client.embed.send(message, { desc: 'Il n'y a pas d'autres guildes pour votre annonce, "v!invite" et configurez le bot sur d'autres guildes avant de réessayer.' })
+          client.embed.send(message, { desc: 'Il n\'y a pas d\'autres guildes pour votre annonce, "v!invite" et configurez le bot sur d\'autres guildes avant de réessayer.' })
           return
         }
 

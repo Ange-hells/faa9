@@ -13,6 +13,7 @@ exports.run = async (client, message, args) => {
   client.embed.send(message, {
     title: "faa9",
     code: true,
+    color: (0xEB77D3),
     desc: `Bonjour a tou.te.s.
     Je suis Faa9 l'esclave de S I S S Y S H O W. Mes Maitres.sse mon mise a disposition ici pour votre confort.
     Ma mission et donc de vous obeir et de vous facilité la vie en vous fournisant des interactions 
@@ -37,3 +38,5 @@ exports.help = {
   usage: "",
   description: " .",
 };
+
+// https://patreon.com/faa9?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link
