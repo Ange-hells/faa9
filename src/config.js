@@ -26,24 +26,24 @@ const config = {
         })
       }
     },
-    // {
-    //   level: 2,
-    //   name: 'Modo',
-    //   check: (client, message) => {
-    //     return new Promise((resolve, reject) => {
-    //       resolve(message.member.hasPermission("BAN_MEMBERS") === true)
-    //     })
-    //   }
-    // },
-    // {
-    //   level: 3,
-    //   name: 'Admin',
-    //   check: (client, message) => {
-    //     return new Promise((resolve, reject) => {
-    //       resolve(message.member.hasPermission("MANAGE_GUILD") === true)
-    //     })
-    //   }
-    // },
+    {
+      level: 2,
+      name: 'Modo',
+      check: (client, message) => {
+        return new Promise((resolve, reject) => {
+          resolve(message.member.hasPermission("BAN_MEMBERS") === true)
+        })
+      }
+    },
+    {
+      level: 3,
+      name: 'Admin',
+      check: (client, message) => {
+        return new Promise((resolve, reject) => {
+          resolve(message.member.hasPermission("MANAGE_GUILD") === true)
+        })
+      }
+    },
     {
       level: 4,
       name: 'Server Owner',

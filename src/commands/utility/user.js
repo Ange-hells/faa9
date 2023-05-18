@@ -39,8 +39,7 @@ exports.run = async (client, message, args, customisation) => {
         💻┆Commandes : ${client.commands.size}
 
         ┆Roles : ${muser.roles.cache.array()}
-        🔗┆Lien : `,
-        
+        🔗┆Lien : soutient moi sur mon patreon.com/faa9`,
     });
   if (!message.mentions.users.first() && args.length > 0){
     user = message.guild.member(args[0]).user

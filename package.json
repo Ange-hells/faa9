@@ -1,14 +1,14 @@
 {
   "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "A partner automation discord bot.",
+  "version": "6.5.0.a",
+  "description": " ",
   "main": "bot.js",
   "scripts": {
     "start": "cd src && nodemon -q bot.js",
     "lint": "cd src && eslint --fix .",
     "docs": "cd src && jsdoc -r --readme ../.github/README.md -d ../docs ."
   },
-  "author": "valkyrienyanko",
+  "author": "noUNi",
   "license": "ISC",
   "engines": {
     "node": ">=12.x"
@@ -31,6 +31,5 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "nodemon": "^2.0.2"
-  },
-  "token": "MTAxMDIxNzk1Mjk0NTEyNzQyNA.GNdTYB.0ri_tw-n2pDqwTJKqzp8LTjeiokq0RJnyLQfxY"
+  }
 }

@@ -7,7 +7,7 @@ exports.run = (client, message) => {
         color: ("0xEB77D3"),
         code: true,
         title:``,
-        desc: `${msg}`,
+        desc: msg,
       });
 };
 
